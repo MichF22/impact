@@ -1,0 +1,560 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    line-height: 2.5rem;
+    letter-spacing: 1px;
+}
+
+html {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+h1 {
+    font-family: Inter, Arial, sans-serif;
+    color: #CC4837;
+}
+
+p {
+    font-family: Sintony, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 1400px){
+    :root{
+        line-height: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    html {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+}
+
+/* Nav START */
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid #59473F 3px;
+}
+
+header > div > .logo {
+    min-width: 15%;
+    height: auto;
+    padding-bottom: 1rem;
+    min-height: 75px;
+}
+
+.nav-links {
+    font-family: Inter, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.our-story {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+.our-story:hover {
+    color: #CC4837;
+}
+
+.initiatives {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.initiatives:hover {
+    color: #CC4837;
+}
+
+.get-involved {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.get-involved:hover {
+    color: #CC4837;
+}
+
+.news {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.news:hover {
+    color: #CC4837;
+}
+
+.contact-us {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.contact-us:hover {
+    color: #CC4837;
+}
+
+.donate {
+    text-decoration: none;
+    color: black;
+}
+
+.donate:hover {
+    color: #CC4837;
+}
+
+.burger {
+    width: auto;
+    height: 50px;
+    display: none;
+}
+
+@media only screen and (max-width: 1200px){
+    .burger{
+        display: block;
+    }
+
+    .nav-links{
+        display: none;
+    }
+}
+
+/* Hero START */
+
+.hero-image {
+    background-image: url("../images/unsplash-3.jpg");
+    background-size: cover;
+    min-height: 825px;
+    width: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.hero-content {
+    position: absolute;
+    top: 550px;
+    left: 150px;
+}
+
+.text-bg {
+    background: rgba(0, 0, 0, .6);
+    max-width: 450px;
+    border-radius: 10px;
+    transform: translateY(2);
+}
+
+.hero-text {
+    color: #CC4837;
+    font-family: Inter, Arial, sans-serif;
+    font-size: 30px;
+    padding: 1rem;
+}
+
+.main-button {
+    font-family: Inter, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 10px;
+    border-color: #E4C49F;
+    background-color: #E4C49F;
+    cursor: pointer;
+}
+
+.main-button:hover {
+    background-color: #CC4837;
+    color: white;
+}
+
+@media only screen and (max-width: 1200px){
+    .hero-image{
+        min-height: 500px;
+    }
+
+    .hero-content{
+        top: 200px;
+        left: 75px;
+    }
+
+    .text-bg{
+        max-width: 300px;
+    }
+
+    .hero-text{
+        font-size: 20px;
+    }
+
+    .main-button{
+        font-size: 15px;
+        padding: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .hero-image{
+        min-height: 300px;
+    }
+
+    .hero-content{
+        top: 125px;
+        left: 50px;
+    }
+
+    .text-bg{
+        max-width: 250px;
+    }
+
+    .hero-text{
+        font-size: 15px;
+    }
+}
+
+/*Hero END */
+
+/* Grids START */
+
+.tag-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Inter, Arial, sans-serif;
+    padding: 4rem;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding-bottom: 4rem;
+}
+
+.grid-image-1 {
+    grid-column: 1 / 6;
+    background-image: url("../images/outreach.jpg");
+    background-size: cover;
+    max-height: 500px;
+    border-radius: 10px;
+}
+
+.info-1 {
+    grid-column: 7 / 13;
+    padding-left: 1rem;
+}
+
+.grid-image-2 {
+    grid-column: 8 / 13;
+    background-image: url("../images/soul-kitchen.jpg");
+    background-size: cover;
+    max-height: 500px;
+    border-radius: 10px;
+}
+
+.info-2 {
+    grid-column: 1 / 7;
+    padding-left: 1rem;
+}
+
+.grid-image-3 {
+    grid-column: 1 / 6;
+    background-image: url("../images/blankets.jpg");
+    background-size: cover;
+    max-height: 500px;
+    border-radius: 10px;
+}
+
+.info-3 {
+    grid-column: 7 / 13;
+    padding-left: 1rem;
+}
+
+@media only screen and (max-width: 1400px){
+    .info-1{
+        font-size: small;
+    }
+
+    .info-2{
+        font-size: small;
+    }
+
+    .info-3{
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .tag-line{
+        font-size: small;
+    }
+
+    .grid-image-1{
+        grid-column: span 12;
+        margin: 0 auto;
+        height: 500px;
+        width: 750px;
+    }
+    
+    .info-1{
+        grid-column: span 12;
+    }
+
+    .grid-image-2{
+        grid-column: span 12;
+        margin: 0 auto;
+        height: 500px;
+        width: 750px;
+    }
+
+    .info-2{
+        grid-column: span 12;
+        padding-bottom: 4rem;
+    }
+
+    .grid-image-3{
+        grid-column: span 12;
+        margin: 0 auto;
+        height: 500px;
+        width: 750px;
+    }
+
+    .info-3{
+        grid-column: span 12;
+    }
+}
+
+@media only screen and (max-width: 800px){
+
+    .tag-line{
+        padding: 1rem;
+        font-size: smaller;
+    }
+
+    .grid-image-1{
+        margin: 0 auto;
+        height: 300px;
+        width: 450px;
+    }
+    
+    .grid-image-2{
+        margin: 0 auto;
+        height: 300px;
+        width: 450px;
+    }
+
+    .grid-image-3{
+        margin: 0 auto;
+        height: 300px;
+        width: 450px;
+    }
+}
+
+/* Grids END */
+
+/* Banner START */
+
+#banner {
+    background-color: rgba(228, 196, 159, 20%);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.banner-image {
+    grid-column: 3 / 7;
+    background-image: url("../images/banner-mock.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    width: auto;
+    /* position: relative;
+    top: 100px;
+    left: 200px;
+    bottom: 100px;
+    z-index: 2; */
+}
+
+.banner-info {
+    grid-column: 7 / 11;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.impact-logo {
+    width: auto;
+    height: 200px;
+}
+
+@media only screen and (max-width: 1600px){
+    .impact-logo{
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 1400px){
+    .banner-image{
+        min-height: 400px;
+    }
+
+    .banner-info{
+        font-size: small;
+    }
+
+    .impact-logo{
+        height: 125px;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .banner-image{
+        grid-column: 2 / 6;
+    }
+
+    .banner-info{
+        grid-column: 8 / 12;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .banner-image{
+        grid-column: span 12;
+        margin: 0 auto;
+        height: 500px;
+        width: 375px;
+    }
+
+    .banner-info{
+        grid-column: span 12;
+    }
+}
+
+/* Footer START */
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid #59473F 3px;
+    margin-top: 4rem;
+}
+
+.social-links {
+    padding-top: 0.5rem;
+}
+
+.facebook {
+    filter: invert(83%) sepia(35%) saturate(335%) hue-rotate(341deg) brightness(95%) contrast(88%);
+}
+
+.facebook:hover {
+    filter: invert(36%) sepia(68%) saturate(1010%) hue-rotate(331deg) brightness(92%) contrast(89%);
+}
+
+.instagram {
+    filter: invert(83%) sepia(35%) saturate(335%) hue-rotate(341deg) brightness(95%) contrast(88%);
+}
+
+.instagram:hover {
+    filter: invert(36%) sepia(68%) saturate(1010%) hue-rotate(331deg) brightness(92%) contrast(89%);
+}
+
+.twitter {
+    filter: invert(83%) sepia(35%) saturate(335%) hue-rotate(341deg) brightness(95%) contrast(88%);
+}
+
+.twitter:hover {
+    filter: invert(36%) sepia(68%) saturate(1010%) hue-rotate(331deg) brightness(92%) contrast(89%);
+}
+
+.footer-links {
+    font-family: Inter, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.our-story-footer {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.our-story-footer:hover {
+    color: #CC4837;
+}
+
+.initiatives-footer {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.initiatives-footer:hover {
+    color: #CC4837;
+}
+
+.get-involved-footer {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.get-involved-footer:hover {
+    color: #CC4837;
+}
+
+.news-footer {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.news-footer:hover {
+    color: #CC4837;
+}
+
+.contact-us-footer {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.contact-us-footer:hover {
+    color: #CC4837;
+}
+
+.donate-footer {
+    text-decoration: none;
+    color: black;
+}
+
+.donate-footer:hover {
+    color: #CC4837;
+}
+
+@media only screen and (max-width: 1400px){
+    #footer{
+        flex-direction: column;
+    }
+
+    .footer-links{
+        padding: 2rem;
+    }
+}
+
+/* Footer END */

@@ -1,0 +1,468 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    line-height: 2.5rem;
+    letter-spacing: 1px;
+}
+
+html {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+h1 {
+    font-family: Inter, Arial, sans-serif;
+    color: #CC4837;
+}
+
+p {
+    font-family: Sintony, Helvetica, sans-serif;
+}
+
+/* Nav START */
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid #59473F 3px;
+}
+
+header > div > .logo {
+    min-width: 15%;
+    height: auto;
+    padding-bottom: 1rem;
+    min-height: 75px;
+}
+
+@media only screen and (max-width: 1400px){
+    /* :root{
+        line-height: 2rem;
+    } */
+}
+
+@media only screen and (max-width: 1200px){
+    html {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+}
+
+.nav-links {
+    font-family: Inter, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.our-story {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+.our-story:hover {
+    color: #CC4837;
+}
+
+.initiatives {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.initiatives:hover {
+    color: #CC4837;
+}
+
+.get-involved {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.get-involved:hover {
+    color: #CC4837;
+}
+
+.news {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.news:hover {
+    color: #CC4837;
+}
+
+.contact-us {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.contact-us:hover {
+    color: #CC4837;
+}
+
+.donate {
+    text-decoration: none;
+    color: black;
+}
+
+.donate:hover {
+    color: #CC4837;
+}
+
+.burger {
+    width: auto;
+    height: 50px;
+    display: none;
+}
+
+@media only screen and (max-width: 1200px){
+    .burger{
+        display: block;
+    }
+
+    .nav-links{
+        display: none;
+    }
+}
+
+/* Hero START */
+
+#hero {
+    background-color: rgba(228, 196, 159, 20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.hero-image {
+    padding: 4rem;
+    margin: 0 auto;
+    height: 600px;
+    width: auto;
+}
+
+@media only screen and (max-width: 1600px){
+    .hero-image{
+        margin: 0 auto;
+        height: 400px;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .hero-image{
+        margin: 0 auto;
+        height: 300px;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .hero-image{
+        margin: 0 auto;
+        height: 250px;
+        width: auto;
+    }
+}
+
+/* Hero END */
+
+/* Grids START */
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+.info-left {
+    grid-column: 2 / 7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid-image-right {
+    grid-column: 8 / 12;
+    background-image: url("../images/banner-mock.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 800px;
+}
+
+.header {
+    font-size: 50px;
+}
+
+.p-info {
+    font-size: 20px;
+}
+
+.info-right {
+    grid-column: 8 / 12;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid-image-left {
+    grid-column: 2 / 7;
+    background-image: url("../images/calendar-mock-up.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 800px;
+}
+
+.grid-image-right-2 {
+    grid-column: 8 / 12;
+    background-image: url("../images/quiz-mock.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 800px;
+}
+
+.grid-image-left-2 {
+    grid-column: 2 / 7;
+    background-image: url("../images/chat-mock-3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 800px;
+}
+
+@media only screen and (max-width:1400px){
+    .grid-image-right{
+        margin: 0 auto;
+        height: auto;
+        width: 500px;
+    }
+
+    .grid-image-right-2{
+        margin: 0 auto;
+        height: auto;
+        width: 500px;
+    }
+
+    .grid-image-left{
+        margin: 0 auto;
+        height: auto;
+        width: 500px;
+    }
+
+    .grid-image-left-2{
+        margin: 0 auto;
+        height: auto;
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    #grid{
+        padding-bottom: 2rem;
+        margin-top: 0rem;
+    }
+
+    .grid-image-right{
+        grid-column: span 12;
+    }
+
+    .grid-image-right-2{
+        grid-column: span 12;
+    }
+
+    .grid-image-left{
+        grid-column: span 12;
+    }
+
+    .grid-image-left-2{
+        grid-column: span 12;
+    }
+
+    .info-left{
+        grid-column: span 12;
+    }
+
+    .info-right{
+        grid-column: span 12;
+    }
+}
+
+/* Grids END */
+
+/* Lower banner START */
+
+.left {
+    grid-column: 1 / 7;
+    background-color: rgba(228, 196, 159, 20%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 8rem;
+}
+
+.logo-bottom {
+    width: auto;
+    height: 200px;
+}
+
+.apple-store {
+    width: auto;
+    height: 80px;
+}
+
+.person-mock {
+    grid-column: 7 / 13;
+    background-image: url("../images/splash-mock.png");
+    background-size: cover;
+    min-height: 800px;
+}
+
+@media only screen and (max-width:1550px){
+    .logo-bottom{
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .left{
+        grid-column: span 12;
+    }
+
+    .person-mock{
+        grid-column: span 12;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .logo-bottom{
+        height: 100px;
+    }
+
+    .apple-store{
+        height: 60px;
+    }
+}
+
+/* Lower banner END */
+
+/* Footer START */
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid #59473F 3px;
+    margin-top: 4rem;
+}
+
+.social-links {
+    padding-top: 0.5rem;
+}
+
+.facebook {
+    filter: invert(83%) sepia(35%) saturate(335%) hue-rotate(341deg) brightness(95%) contrast(88%);
+}
+
+.facebook:hover {
+    filter: invert(36%) sepia(68%) saturate(1010%) hue-rotate(331deg) brightness(92%) contrast(89%);
+}
+
+.instagram {
+    filter: invert(83%) sepia(35%) saturate(335%) hue-rotate(341deg) brightness(95%) contrast(88%);
+}
+
+.instagram:hover {
+    filter: invert(36%) sepia(68%) saturate(1010%) hue-rotate(331deg) brightness(92%) contrast(89%);
+}
+
+.twitter {
+    filter: invert(83%) sepia(35%) saturate(335%) hue-rotate(341deg) brightness(95%) contrast(88%);
+}
+
+.twitter:hover {
+    filter: invert(36%) sepia(68%) saturate(1010%) hue-rotate(331deg) brightness(92%) contrast(89%);
+}
+
+.footer-links {
+    font-family: Inter, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.our-story-footer {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.our-story-footer:hover {
+    color: #CC4837;
+}
+
+.initiatives-footer {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.initiatives-footer:hover {
+    color: #CC4837;
+}
+
+.get-involved-footer {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.get-involved-footer:hover {
+    color: #CC4837;
+}
+
+.news-footer {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.news-footer:hover {
+    color: #CC4837;
+}
+
+.contact-us-footer {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.contact-us-footer:hover {
+    color: #CC4837;
+}
+
+.donate-footer {
+    text-decoration: none;
+    color: black;
+}
+
+.donate-footer:hover {
+    color: #CC4837;
+}
+
+@media only screen and (max-width: 1400px){
+    #footer{
+        flex-direction: column;
+    }
+
+    .footer-links{
+        padding: 2rem;
+    }
+}
+
+/* Footer END */
